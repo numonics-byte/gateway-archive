@@ -76,7 +76,7 @@ export default function HeroSection() {
           </p>
 
           {/* Supporting copy — typewriter */}
-          <p className="font-mono text-sm sm:text-base text-muted-foreground leading-relaxed tracking-wide mb-10 max-w-lg min-h-[4.5rem] sm:min-h-[5rem]">
+          <p className="font-mono text-sm sm:text-base text-foreground sm:text-muted-foreground leading-relaxed tracking-wide mb-10 max-w-lg min-h-[4.5rem] sm:min-h-[5rem]">
             {displayedText}
             <span className={`inline-block w-2 h-4 bg-accent ml-1 ${isTypingDone ? 'animate-blink' : ''}`} />
           </p>
