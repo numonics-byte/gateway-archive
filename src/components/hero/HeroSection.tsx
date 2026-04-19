@@ -53,7 +53,7 @@ export default function HeroSection() {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-xl">
           {/* Classification badge */}
-          <div className="flex items-center gap-3 mb-8">
+          <div className="hidden sm:flex items-center gap-3 mb-8">
             <span className="inline-flex items-center gap-2 border border-destructive cyber-chamfer-sm px-3 py-1 bg-destructive/10">
               <span className="w-1.5 h-1.5 rounded-full bg-destructive animate-pulse-neon" />
               <span className="font-label text-[10px] tracking-[0.2em] text-destructive uppercase">
