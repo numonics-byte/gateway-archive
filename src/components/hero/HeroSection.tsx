@@ -91,7 +91,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/#pricing"
-              className="cyber-chamfer border border-muted-foreground/40 text-muted-foreground font-label text-xs tracking-[0.2em] uppercase px-8 py-3 text-center hover:border-accent hover:text-accent transition-all duration-150 cyber-focus"
+              className="cyber-chamfer border border-foreground/40 text-foreground sm:border-muted-foreground/40 sm:text-muted-foreground font-label text-xs tracking-[0.2em] uppercase px-8 py-3 text-center hover:border-accent hover:text-accent transition-all duration-150 cyber-focus"
             >
               See the Full Product
             </Link>
