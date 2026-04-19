@@ -47,7 +47,10 @@ export default function HomePage() {
       {/* 1. Hero — Hook + intrigue */}
       <HeroSection />
 
-      {/* 2. Six Domains — immediately answer "what is this?" */}
+      {/* 2. Social Proof — validate immediately after hook */}
+      <SocialProofSection />
+
+      {/* 3. Six Domains — answer "what is this?" */}
       <section className="py-16 sm:py-24 border-t border-border relative overflow-hidden">
         <div className="absolute inset-0 circuit-bg-tertiary opacity-40" />
         <div className="absolute top-0 right-1/4 w-72 h-72 rounded-full bg-accent-tertiary/4 blur-3xl pointer-events-none" />
@@ -92,9 +95,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* 3. Social Proof — validate now that they know what it is */}
-      <SocialProofSection />
 
       {/* 4. Anchor Document — star piece, deepest credibility */}
       <section className="py-16 sm:py-24 border-t border-border bg-card">
