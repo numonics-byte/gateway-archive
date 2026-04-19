@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Chamfered background -->
+  <polygon points="6,0 26,0 32,6 32,26 26,32 6,32 0,26 0,6" fill="#0a0a0f"/>
+  <!-- Neon green border -->
+  <polygon points="6,0 26,0 32,6 32,26 26,32 6,32 0,26 0,6" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <!-- G lettermark -->
+  <text x="16" y="22" font-family="monospace, sans-serif" font-size="18" font-weight="900" text-anchor="middle" fill="#00ff88" filter="url(#glow)">G</text>
+</svg>
