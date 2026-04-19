@@ -133,10 +133,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. Pricing — paid tiers after value established */}
-      <PricingSection />
-
-      {/* 7. Archive preview — reinforce depth for scrollers */}
+      {/* 5. Archive preview — reinforce depth before pricing */}
       <section className="py-16 sm:py-24 border-t border-border relative">
         <div className="absolute inset-0 circuit-bg opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,7 +167,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. Lead Magnet — second touch before footer */}
+      {/* 6. Pricing — after archive depth is established */}
+      <PricingSection />
+
+      {/* 7. Lead Magnet — second touch before footer */}
       <LeadMagnetSection />
     </div>
   )
