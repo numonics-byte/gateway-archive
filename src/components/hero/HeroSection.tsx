@@ -29,7 +29,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen flex flex-col justify-center overflow-hidden">
+    <section className="relative h-screen flex flex-col justify-start pt-20 sm:justify-center sm:pt-0 overflow-hidden">
       {/* ── 3D Canvas — full hero background ─────────────────── */}
       <div className="absolute inset-0 pointer-events-none">
         <Canvas camera={{ position: [0, 8, 14], fov: 45 }}>
