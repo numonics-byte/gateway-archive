@@ -1,0 +1,222 @@
+{
+  "reference_document": {
+    "title": "Analysis and Assessment of Gateway Process",
+    "doc_number": "CIA-RDP96-00788R001700210016-5",
+    "author": "LTC Wayne M. McDonnell, US Army Intelligence",
+    "date": "June 9, 1983",
+    "pages": 29,
+    "classification": "Unclassified (Approved for Release 2003/09/10)",
+    "pdf_url": "https://www.cia.gov/readingroom/docs/cia-rdp96-00788r001700210016-5.pdf",
+    "reading_room_url": "https://www.cia.gov/readingroom/document/cia-rdp96-00788r001700210016-5",
+    "topics": ["Gateway Experience", "Brain hemisphere synchronization", "Hemi-Sync", "Transcendental meditation", "Hypnosis", "Biofeedback", "Consciousness", "Holographic universe", "Out-of-body experience", "Frequency Following Response", "Monroe Institute", "Kundalini", "Energy entrainment"],
+    "summary": "Comprehensive Army assessment of the Monroe Institute's Gateway Experience program, exploring how brain hemisphere synchronization techniques (Hemi-Sync) can alter consciousness. Covers hypnosis, transcendental meditation, biofeedback, holographic universe theory, quantum mechanics of consciousness, out-of-body experiences, and the role of resonant breathing in achieving altered states."
+  },
+  "related_documents": [
+    {
+      "id": 1,
+      "title": "STAR GATE Project: An Overview",
+      "doc_number": "CIA-RDP96-00789R002800180001-2",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002800180001-2.pdf",
+      "category": "Remote Viewing / Program Overview",
+      "topics": ["STAR GATE", "Remote viewing", "Foreign assessment", "Anomalous cognition", "Intelligence collection"],
+      "summary": "Broad overview of the three main activity areas of the STAR GATE program: foreign assessment, external research, and in-house investigations of paranormal phenomena for intelligence purposes."
+    },
+    {
+      "id": 2,
+      "title": "The Gateway Program (Monroe Institute)",
+      "doc_number": "CIA-RDP96-00788R001700270006-0",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00788R001700270006-0.pdf",
+      "category": "Consciousness / Meditation Training",
+      "topics": ["Monroe Institute", "Gateway Program", "Binaural beats", "Frequency Following Response", "Brain wave synchronization", "Deep relaxation", "Consciousness training"],
+      "summary": "Overview of the Monroe Institute's Gateway Program, describing Robert Monroe's development of binaural beat technology, the Hemi-Sync process, and the structured training system for consciousness exploration."
+    },
+    {
+      "id": 3,
+      "title": "Monroe Institute of Applied Sciences",
+      "doc_number": "CIA-RDP96-00788R001700270009-7",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00788R001700270009-7.pdf",
+      "category": "Consciousness / Meditation Training",
+      "topics": ["Monroe Institute", "Consciousness exploration", "M-5000 program", "Training participants", "Altered states"],
+      "summary": "Describes the Monroe Institute's training program (originally named M-5000) with over 1,500 participants trained in consciousness exploration techniques."
+    },
+    {
+      "id": 4,
+      "title": "Gateway Intermediate Workbook",
+      "doc_number": "CIA-RDP96-00788R001700210023-7",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/cia-rdp96-00788r001700210023-7.pdf",
+      "category": "Breathing / Meditation / Practical Training",
+      "topics": ["Resonant breathing", "Diaphragm breathing", "Focus 10", "Focus 12", "Energy Bar Tool", "Living Body Map", "Resonant Energy Balloon", "Out-of-body exercises", "Remote viewing", "Energy work"],
+      "summary": "Practical training workbook with detailed instructions for resonant breathing exercises, energy visualization, creating protective energy fields (REBAL), out-of-body techniques, remote viewing, and pattern change exercises. Contains step-by-step breathing protocols."
+    },
+    {
+      "id": 5,
+      "title": "Meditation Investigation",
+      "doc_number": "CIA-RDP79-00999A000200010091-5",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP79-00999A000200010091-5.pdf",
+      "category": "Meditation / Consciousness Research",
+      "topics": ["Meditation", "Altered states of consciousness", "Brain research", "Scientific investigation of meditation"],
+      "summary": "Overview of breakthroughs in research concerning altered states of consciousness, the brain, and scientific interest in meditation practices."
+    },
+    {
+      "id": 6,
+      "title": "An Evaluation of the Remote Viewing Program",
+      "doc_number": "CIA-RDP96-00791R000200180005-5",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000200180005-5.pdf",
+      "category": "Remote Viewing / Program Evaluation",
+      "topics": ["STAR GATE", "Remote viewing", "DIA program", "Paranormal phenomena", "Intelligence collection evaluation"],
+      "summary": "Evaluation of the Defense Intelligence Agency's STAR GATE program involving the use of paranormal phenomena, primarily remote viewing, for intelligence collection purposes."
+    },
+    {
+      "id": 7,
+      "title": "A Comprehensive Research Plan for Anomalous Mental Phenomena",
+      "doc_number": "CIA-RDP96-00789R003100080001-9",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R003100080001-9.pdf",
+      "category": "Research Planning / Anomalous Cognition",
+      "topics": ["Anomalous cognition", "Anomalous perturbation", "ESP", "Telepathy", "Clairvoyance", "Precognition", "Psychokinesis", "Research methodology"],
+      "summary": "59-page SAIC research plan proposing a $30M, 5-year systematic investigation of anomalous mental phenomena including ESP, telepathy, clairvoyance, precognition, and psychokinesis. Originally classified SECRET/NOFORN."
+    },
+    {
+      "id": 8,
+      "title": "Anomalous Mental Phenomena: Selected Papers",
+      "doc_number": "CIA-RDP96-00789R003100030001-4",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R003100030001-4.pdf",
+      "category": "Research / Meta-Analysis",
+      "topics": ["Anomalous mental phenomena", "Meta-analysis", "Ganzfeld experiments", "ESP", "Magnetoencephalography", "Physics of consciousness"],
+      "summary": "Massive 439-page compilation of selected scientific papers on anomalous mental phenomena by SAIC's Cognitive Sciences Laboratory. Includes meta-analyses, mainstream publications, and physics research."
+    },
+    {
+      "id": 9,
+      "title": "A Suggested Remote Viewing Training Procedure",
+      "doc_number": "CIA-RDP96-00789R002200070001-0",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002200070001-0.pdf",
+      "category": "Remote Viewing / Training",
+      "topics": ["Remote viewing training", "Subjective experiences", "Expert viewer methodology", "Consciousness techniques"],
+      "summary": "80-page detailed report by an expert viewer assembling subjective experiences associated with remote viewing, providing a structured training procedure."
+    },
+    {
+      "id": 10,
+      "title": "Dolan's Training Technique",
+      "doc_number": "CIA-RDP96-00792R000500600034-0",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00792R000500600034-0.pdf",
+      "category": "Breathing / Meditation / Consciousness Training",
+      "topics": ["Three-phase breathing", "Diaphragm breathing", "Progressive relaxation", "Focus 10", "Focus 12", "Remote viewing preparation", "Cooling breath", "Rhythmic breathing"],
+      "summary": "Describes a structured training technique involving three-phase breathing (inhale through nose, hold, exhale through mouth), progressive relaxation meditation, countdown to altered states, and consciousness expansion for remote viewing."
+    },
+    {
+      "id": 11,
+      "title": "Psychic Process, Energy Transfer, and Things That Go Bump in the Night",
+      "doc_number": "CIA-RDP96-00787R000500380004-4",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000500380004-4.pdf",
+      "category": "Parapsychology / Metaphysical Research",
+      "topics": ["ESP", "Psychokinesis", "Extrasensory perception", "Energy transfer", "Psi phenomena"],
+      "summary": "Explores the two dominant subdivisions of psychic phenomena: extrasensory perception (ESP) and psychokinesis (PK), examining the mechanisms of energy transfer in psychic processes."
+    },
+    {
+      "id": 12,
+      "title": "Controlled Offensive Behavior - USSR",
+      "doc_number": "CIA-RDP96-00788R001300020001-6",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00788R001300020001-6.pdf",
+      "category": "Foreign Assessment / Soviet Research",
+      "topics": ["Soviet parapsychology", "Offensive behavior control", "Mind control", "Military intelligence", "Psychoenergetics"],
+      "summary": "Department of Defense Intelligence Document prepared by the Medical Intelligence Office examining Soviet research into controlled offensive behavior and psychoenergetic capabilities."
+    },
+    {
+      "id": 13,
+      "title": "Soviet and East European Parapsychology Research",
+      "doc_number": "NSA-RDP96X00790R000100010041-2",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/NSA-RDP96X00790R000100010041-2.pdf",
+      "category": "Foreign Assessment / Soviet Research",
+      "topics": ["Soviet parapsychology", "Psychokinesis", "Telepathy", "Mental influence on matter", "Biocommunication", "Bioenergetics"],
+      "summary": "Survey of Soviet and East European parapsychology research covering psychokinesis (mentally moving objects, affecting electrical circuits), telepathy, and related phenomena."
+    },
+    {
+      "id": 14,
+      "title": "Remote Viewing: Parapsychological Potential for Intelligence Collection",
+      "doc_number": "CIA-RDP96-00789R002600250001-6",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002600250001-6.pdf",
+      "category": "Remote Viewing / Intelligence",
+      "topics": ["Remote viewing", "SRI International", "Parapsychology", "Intelligence collection", "Harold Puthoff", "Russell Targ"],
+      "summary": "Military analysis of remote viewing's parapsychological potential for intelligence collection, referencing SRI International research by scientists Harold Puthoff and Russell Targ."
+    },
+    {
+      "id": 15,
+      "title": "Ritual, Synchronicity, and Inner Guidance",
+      "doc_number": "CIA-RDP96-00792R000300380001-3",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00792R000300380001-3.pdf",
+      "category": "Breathing / Energy Work / Metaphysical",
+      "topics": ["Breathing exercises", "Energy visualization", "Pelvic energy", "Inner guidance", "Ritual", "Synchronicity"],
+      "summary": "Describes breathing and energy work techniques involving drawing energy threads into the body through breath, ritual practices, and achieving synchronicity with inner guidance."
+    },
+    {
+      "id": 16,
+      "title": "Hemi-Sync Brain Wave Patterns",
+      "doc_number": "CIA-RDP96-00788R001200060018-5",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00788R001200060018-5.pdf",
+      "category": "Consciousness / Neuroscience",
+      "topics": ["Hemi-Sync", "Brain wave synchronization", "Simultaneous brain wave patterns", "Consciousness states", "EEG"],
+      "summary": "Research on synchronous/simultaneous brain wave patterns in both hemispheres (HEMI-SYNC), their rare occurrence in typical human consciousness, and their role in altered states."
+    },
+    {
+      "id": 17,
+      "title": "Mars Exploration (Remote Viewing Session), May 22, 1984",
+      "doc_number": "CIA-RDP96-00788R001900760001-9",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/cia-rdp96-00788r001900760001-9.pdf",
+      "category": "Remote Viewing / Operational",
+      "topics": ["Remote viewing", "Mars exploration", "Out-of-body consciousness", "Anomalous cognition", "Extraterrestrial viewing"],
+      "summary": "Transcript of a remote viewing session targeting Mars, in which a viewer was directed to explore geological activity and structures on Mars using consciousness projection techniques."
+    },
+    {
+      "id": 18,
+      "title": "Gateway Breathing Techniques and Patterning",
+      "doc_number": "CIA-RDP96-00788R001700270008-8",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00788R001700270008-8.pdf",
+      "category": "Breathing / Consciousness Training",
+      "topics": ["Breathing techniques", "Patterning", "Mind sets", "Consciousness keys", "Gateway training"],
+      "summary": "Details how breathing techniques and patterning serve as keys in consciousness training, providing familiar mind sets that can be easily recalled through daily practice."
+    },
+    {
+      "id": 19,
+      "title": "Monroe Institute Method and Techniques",
+      "doc_number": "CIA-RDP96-00788R001700210025-5",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00788R001700210025-5.pdf",
+      "category": "Consciousness / Technology",
+      "topics": ["Monroe method", "Patented techniques", "Binaural beats", "Audio technology", "Consciousness training"],
+      "summary": "Describes the patented Monroe method and techniques, including the generic patent granted to Robert Monroe for his binaural beat consciousness-altering system."
+    },
+    {
+      "id": 20,
+      "title": "Project STAR GATE Research and Peer Review Plan",
+      "doc_number": "CIA-RDP96-00789R002700020001-0",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002700020001-0.pdf",
+      "category": "Research Planning / Program Management",
+      "topics": ["STAR GATE", "Anomalous mental phenomena", "Research plan", "Peer review", "DIA", "Congressional oversight"],
+      "summary": "DIA's multi-year research and development program plan for STAR GATE, developed in response to Congressional Directed Action to investigate anomalous mental phenomena with rigorous scientific oversight."
+    },
+    {
+      "id": 21,
+      "title": "Soviet Parapsychology: Biocommunication and Bioenergetics",
+      "doc_number": "CIA-RDP96-00792R000600350001-3",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00792R000600350001-3.pdf",
+      "category": "Foreign Assessment / Soviet Research",
+      "topics": ["Soviet parapsychology", "Telepathy (biocommunication)", "Psychokinesis (bioenergetics)", "Communist parapsychology research"],
+      "summary": "25-year survey of Soviet and Czechoslovakian parapsychology research, covering paranormal phenomena including ESP, telepathy (Soviet 'biocommunication'), and psychokinesis (Soviet 'bioenergetics')."
+    },
+    {
+      "id": 22,
+      "title": "SAIC Experiment Database (Anomalous Mental Phenomena)",
+      "doc_number": "CIA-RDP96-00791R000200190047-6",
+      "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000200190047-6.pdf",
+      "category": "Research / Experimental Data",
+      "topics": ["SAIC experiments", "Anomalous cognition", "Scientific Oversight Committee", "Remote viewing", "Cognitive Sciences Laboratory"],
+      "summary": "Database of SAIC experiments in anomalous mental phenomena, conducted under the supervision of a Scientific Oversight Committee, following SRI International's Cognitive Sciences Program."
+    }
+  ],
+  "categories": {
+    "Consciousness & Meditation Training": [2, 3, 4, 5, 16, 18, 19],
+    "Breathing Techniques & Energy Work": [4, 10, 15, 18],
+    "Remote Viewing & Operational Applications": [1, 6, 9, 14, 17],
+    "Parapsychology & ESP Research": [7, 8, 11, 22],
+    "Soviet/Foreign Metaphysical Research": [12, 13, 21],
+    "Program Management & Research Planning": [1, 7, 20]
+  }
+}
