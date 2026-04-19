@@ -63,9 +63,9 @@ export default function HeroSection() {
           </div>
 
           {/* Glitch headline */}
-          <h1 className="font-heading text-4xl sm:text-7xl lg:text-8xl font-black leading-[0.9] tracking-widest uppercase mb-6">
+          <h1 className="font-heading text-[clamp(2rem,9vw,5rem)] sm:text-7xl lg:text-8xl font-black leading-tight sm:leading-[0.9] tracking-wide sm:tracking-widest uppercase mb-6">
             <span className="block glitch-text text-accent animate-flicker">The CIA</span>
-            <span className="block text-foreground mt-2">Studied</span>
+            <span className="block text-foreground mt-1 sm:mt-2">Studied</span>
             <span className="block text-foreground">Consciousness</span>
           </h1>
 
