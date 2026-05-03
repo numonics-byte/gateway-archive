@@ -5,6 +5,7 @@ const PRODUCT_LINKS = [
   { label: 'The Program — $97',    href: '/#pricing' },
   { label: 'The Immersion — $297', href: '/#pricing' },
   { label: 'Free Cheat Sheet',     href: '/#lead-magnet' },
+  { label: 'Member Login',         href: '/login' },
 ]
 
 const ARCHIVE_LINKS = [

@@ -10,6 +10,7 @@ const links = [
   { href: '/#pricing',     label: 'Pricing' },
   { href: '/documents',    label: 'Archive' },
   { href: '/glossary',     label: 'Glossary' },
+  { href: '/login',        label: 'Member Login' },
 ]
 
 export default function Nav() {
