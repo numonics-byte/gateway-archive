@@ -1,3 +1,5 @@
+import DitheringQuoteCard from '@/components/ui/DitheringQuoteCard'
+
 const VIRAL_STATS = [
   { value: '$20M+',   label: 'Government Funded',   sublabel: 'Taxpayer research budget' },
   { value: '23 yrs',  label: 'Active Program',       sublabel: '1972 to 1995' },
@@ -30,26 +32,7 @@ export default function SocialProofSection() {
         </div>
 
         {/* Featured finding */}
-        <div className="relative border border-accent/30 cyber-chamfer-lg p-8 sm:p-10 bg-background overflow-hidden">
-          <span className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-accent" />
-          <span className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-accent" />
-          <span className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-accent" />
-          <span className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-accent" />
-          <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent pointer-events-none" />
-
-          <p className="font-label text-[10px] tracking-[0.2em] uppercase text-accent mb-6">
-            <span className="text-muted-foreground">&gt; </span>Army Intelligence Memo · June 9, 1983 · Classification: SECRET
-          </p>
-          <blockquote className="font-mono text-base sm:text-lg text-foreground leading-relaxed tracking-wide max-w-3xl">
-            "The Gateway Experience has the potential to induce a state of consciousness in which the individual achieves synchronous operation of both cerebral hemispheres — a 'whole brain' state enabling access to expanded cognitive capabilities well beyond ordinary waking consciousness."
-          </blockquote>
-          <footer className="mt-6 flex items-center gap-4">
-            <div className="h-px flex-1 bg-border" />
-            <p className="font-label text-[10px] tracking-[0.15em] text-muted-foreground uppercase">
-              LTC Wayne M. McDonnell · US Army Intelligence
-            </p>
-          </footer>
-        </div>
+        <DitheringQuoteCard />
       </div>
     </section>
   )
