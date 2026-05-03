@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CIA Gateway Process — Research Breakdown | Gateway Archive',
+  title: 'CIA Gateway Process — Research Breakdown | Declassified Mine',
   description:
     'A scientific breakdown of the 1983 CIA report on the Gateway Process — Hemi-Sync, consciousness, holographic models, and the physics of expanded awareness.',
 }

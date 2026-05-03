@@ -3,6 +3,7 @@ import { allDocuments, CATEGORY_STATS, COLOR_MAP } from '@/lib/documents'
 import DocCard from '@/components/ui/DocCard'
 import HeroSection from '@/components/hero/HeroSection'
 import SocialProofSection from '@/components/sections/SocialProofSection'
+import BackstorySection from '@/components/sections/BackstorySection'
 import LeadMagnetSection from '@/components/sections/LeadMagnetSection'
 import PricingSection from '@/components/sections/PricingSection'
 import HemiSyncOscilloscope from '@/components/ui/HemiSyncOscilloscope'
@@ -47,7 +48,10 @@ export default function HomePage() {
       {/* 1. Hero — Hook + intrigue */}
       <HeroSection />
 
-      {/* 2. Social Proof — validate immediately after hook */}
+      {/* 2. Backstory — how the files surfaced */}
+      <BackstorySection />
+
+      {/* 3. Social Proof — validate immediately after hook */}
       <SocialProofSection />
 
       {/* 3. Six Domains — answer "what is this?" */}

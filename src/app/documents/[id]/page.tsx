@@ -154,7 +154,7 @@ export default async function DocumentPage({ params }: Props) {
                 Get the Full Analysis
               </p>
               <p className="font-mono text-xs text-foreground leading-relaxed tracking-wide mb-4">
-                This document is one of 23. The Gateway Archive distills all of them into an actionable system.
+                This document is one of 23. Declassified Mine distills all of them into an actionable system.
               </p>
               {/* TODO: Replace href with Lemon Squeezy Tier 1 URL */}
               <Link

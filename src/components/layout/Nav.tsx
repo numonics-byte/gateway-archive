@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import MineLogo from '@/components/ui/MineLogo'
 
 const links = [
   { href: '/research',     label: 'Research' },
@@ -15,18 +16,16 @@ export default function Nav() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const isGated = pathname.startsWith('/documents') || pathname === '/program' || pathname === '/cheat-sheet'
+  const isGated = pathname.startsWith('/documents') || pathname === '/program' || pathname === '/cheat-sheet' || pathname === '/portal'
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-7 h-7 border border-accent cyber-chamfer-sm flex items-center justify-center group-hover:shadow-neon transition-all duration-150">
-            <span className="text-accent text-xs font-heading font-bold leading-none">G</span>
-          </div>
+          <MineLogo size={28} />
           <span className="font-heading text-xs font-bold tracking-[0.2em] text-foreground group-hover:text-accent transition-colors duration-150">
-            GATEWAY<span className="text-muted-foreground">//</span>ARCHIVE
+            DECLASSIFIED<span className="text-muted-foreground">//</span>MINE
           </span>
         </Link>
 

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Gateway Program — 10-Step Implementation Guide | Gateway Archive',
+  title: 'The Gateway Program — 10-Step Implementation Guide | Declassified Mine',
   description:
     'A practical, step-by-step program for replicating the CIA-documented Gateway Process. From breath foundations to Focus 21 — the complete training system.',
 }
@@ -150,7 +150,7 @@ export default function ProgramPage() {
       <div className="bg-accent/5 border-b border-accent/30 py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <span className="font-label text-[10px] tracking-[0.2em] text-muted-foreground uppercase">Product Access — The Program</span>
-          <span className="font-label text-[10px] tracking-[0.2em] text-accent uppercase">Gateway Archive Member</span>
+          <span className="font-label text-[10px] tracking-[0.2em] text-accent uppercase">Declassified Mine Member</span>
         </div>
       </div>
 
