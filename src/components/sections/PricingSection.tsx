@@ -16,8 +16,7 @@ const TIERS = [
       'Lifetime access',
     ],
     cta: 'Get Instant Access',
-    // TODO: Replace with Lemon Squeezy checkout URL for Tier 1
-    href: '#',
+    href: 'https://www.paypal.com/ncp/payment/4CQX7EPUB34EA',
   },
   {
     name: 'The Program',
@@ -35,8 +34,7 @@ const TIERS = [
       'Priority email support',
     ],
     cta: 'Start the Program',
-    // TODO: Replace with Lemon Squeezy checkout URL for Tier 2
-    href: '#',
+    href: 'https://www.paypal.com/ncp/payment/JSW295PWCMDW8',
   },
   {
     name: 'The Immersion',
@@ -53,8 +51,7 @@ const TIERS = [
       'Early access to new content',
     ],
     cta: 'Apply for Immersion',
-    // TODO: Replace with Lemon Squeezy checkout URL for Tier 3 (or waitlist form)
-    href: '#',
+    href: 'https://www.paypal.com/ncp/payment/46FWDB2FX922N',
   },
 ]
 
@@ -137,6 +134,8 @@ export default function PricingSection() {
                   {/* CTA */}
                   <Link
                     href={tier.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`block text-center cyber-chamfer-sm border-2 ${border} ${text} font-label text-xs tracking-[0.2em] uppercase px-6 py-3 ${hoverBg} ${hoverShadow} transition-all duration-150 cyber-focus`}
                   >
                     {tier.cta}

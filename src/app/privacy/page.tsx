@@ -45,7 +45,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-heading text-base font-bold text-foreground mb-3 tracking-wide">3. Third Parties</h2>
             <p>
-              We use Lemon Squeezy for payment processing, Beehiiv for email delivery, and standard analytics. We do not sell your data to third parties. Ever.
+              We use PayPal for payment processing, Beehiiv for email delivery, and standard analytics. We do not sell your data to third parties. Ever.
             </p>
           </section>
 

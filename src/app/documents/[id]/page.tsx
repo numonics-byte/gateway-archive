@@ -154,11 +154,12 @@ export default async function DocumentPage({ params }: Props) {
                 Get the Full Analysis
               </p>
               <p className="font-mono text-xs text-foreground leading-relaxed tracking-wide mb-4">
-                This document is one of 23. Declassified Mine distills all of them into an actionable system.
+                This document is one of 23. Declassified Mind distills all of them into an actionable system.
               </p>
-              {/* TODO: Replace href with Lemon Squeezy Tier 1 URL */}
               <Link
-                href="/#pricing"
+                href="https://www.paypal.com/ncp/payment/4CQX7EPUB34EA"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`block w-full text-center cyber-chamfer-sm border-2 ${border} ${text} font-label text-xs tracking-[0.2em] uppercase px-6 py-3 hover:shadow-neon transition-all duration-150 cyber-focus`}
               >
                 Get Instant Access — $27
