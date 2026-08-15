@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <p className="font-heading text-xs font-bold tracking-[0.2em] text-accent mb-3">
-              DECLASSIFIED//MINE
+              DECLASSIFIED//MIND
             </p>
             <p className="text-muted-foreground text-xs leading-relaxed tracking-wide max-w-xs mb-4">
               23 government intelligence documents on consciousness, remote viewing, and altered states — reconstructed, annotated, and turned into an actionable system.

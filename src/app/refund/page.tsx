@@ -7,7 +7,7 @@ export default function RefundPage() {
           <p className="font-label text-xs tracking-[0.2em] uppercase text-accent mb-3">Legal</p>
           <h1 className="font-heading text-3xl sm:text-4xl font-black tracking-wide mb-4">Refund Policy</h1>
           <p className="font-mono text-xs text-muted-foreground tracking-wide">
-            <span className="text-accent">&gt;</span> Last updated: January 2025 · Declassified Mine
+            <span className="text-accent">&gt;</span> Last updated: January 2025 · Declassified Mind
           </p>
         </div>
 

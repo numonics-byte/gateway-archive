@@ -7,7 +7,7 @@ export default function PrivacyPage() {
           <p className="font-label text-xs tracking-[0.2em] uppercase text-accent mb-3">Legal</p>
           <h1 className="font-heading text-3xl sm:text-4xl font-black tracking-wide mb-4">Privacy Policy</h1>
           <p className="font-mono text-xs text-muted-foreground tracking-wide">
-            <span className="text-accent">&gt;</span> Last updated: January 2025 · Declassified Mine
+            <span className="text-accent">&gt;</span> Last updated: January 2025 · Declassified Mind
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-heading text-base font-bold text-foreground mb-3 tracking-wide">6. Security</h2>
             <p>
-              Your data is transmitted over HTTPS. Access codes are stored as hashed environment variables. We take reasonable precautions, but no system is perfectly secure — don't store your life savings in your Declassified Mine account.
+              Your data is transmitted over HTTPS. Access codes are stored as hashed environment variables. We take reasonable precautions, but no system is perfectly secure — don't store your life savings in your Declassified Mind account.
             </p>
           </section>
 

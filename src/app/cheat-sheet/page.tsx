@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Quick Reference Cheat Sheet — Gateway Process | Declassified Mine',
+  title: 'Quick Reference Cheat Sheet — Gateway Process | Declassified Mind',
   description:
     'The complete Gateway Process quick reference: session checklist, Gateway Affirmation, Focus levels, REBAL guide, advanced techniques, and troubleshooting.',
 }
@@ -14,7 +14,7 @@ export default function CheatSheetPage() {
       <div className="bg-accent/5 border-b border-accent/30 py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <span className="font-label text-[10px] tracking-[0.2em] text-muted-foreground uppercase">Product Access — The Archive</span>
-          <span className="font-label text-[10px] tracking-[0.2em] text-accent uppercase">Declassified Mine Member</span>
+          <span className="font-label text-[10px] tracking-[0.2em] text-accent uppercase">Declassified Mind Member</span>
         </div>
       </div>
 

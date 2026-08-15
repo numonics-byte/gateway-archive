@@ -34,7 +34,7 @@ export default function BackstorySection() {
                 Eight years later, twenty-three documents appeared in a government database — filed under bureaucratic identifiers, cross-referenced across three agencies, buried in a system that most people don't know exists. No press release. No summary. Just files.
               </p>
               <p className="text-foreground font-semibold">
-                Declassified Mine spent two years reconstructing what those files contain: a complete map of the human consciousness programs the U.S. government funded, tested, and classified as operationally viable — then shut down anyway.
+                Declassified Mind spent two years reconstructing what those files contain: a complete map of the human consciousness programs the U.S. government funded, tested, and classified as operationally viable — then shut down anyway.
               </p>
               <p>
                 What you're looking at is that reconstruction.
