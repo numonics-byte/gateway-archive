@@ -2,26 +2,26 @@
 
 import { useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useSignIn } from '@clerk/nextjs'
+import { useSignUp } from '@clerk/nextjs'
 import Link from 'next/link'
 import MineLogo from '@/components/ui/MineLogo'
 
-function LoginForm() {
+function SignUpForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const redirect = searchParams.get('redirect') ?? '/portal'
-  const { signIn, errors, fetchStatus } = useSignIn()
+  const { signUp, errors, fetchStatus } = useSignUp()
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [needsClientTrust, setNeedsClientTrust] = useState(false)
+  const [pendingVerification, setPendingVerification] = useState(false)
   const [code, setCode] = useState('')
   const [globalError, setGlobalError] = useState('')
 
   const loading = fetchStatus === 'fetching'
 
   async function finalizeAndRedirect() {
-    await signIn.finalize({
+    await signUp.finalize({
       navigate: async ({ decorateUrl }) => {
         const url = decorateUrl(redirect)
         if (url.startsWith('http')) {
@@ -37,47 +37,52 @@ function LoginForm() {
     e.preventDefault()
     setGlobalError('')
 
-    const { error } = await signIn.password({ identifier: email, password })
+    const { error } = await signUp.password({ emailAddress: email, password })
     if (error) return
 
-    if (signIn.status === 'needs_client_trust') {
-      const { error: sendErr } = await signIn.mfa.sendEmailCode()
+    if (signUp.isTransferable) {
+      setGlobalError('An account with this email already exists. Sign in instead.')
+      return
+    }
+
+    if (signUp.status === 'missing_requirements' && signUp.unverifiedFields.includes('email_address')) {
+      const { error: sendErr } = await signUp.verifications.sendEmailCode()
       if (sendErr) {
         setGlobalError('Could not send a verification code. Try again.')
         return
       }
-      setNeedsClientTrust(true)
+      setPendingVerification(true)
       return
     }
 
-    if (signIn.status === 'complete') {
+    if (signUp.status === 'complete') {
       await finalizeAndRedirect()
       return
     }
 
-    setGlobalError('This sign-in method isn’t supported here. Contact support.')
+    setGlobalError('This sign-up method isn’t supported here. Contact support.')
   }
 
   async function handleVerify(e: React.FormEvent) {
     e.preventDefault()
     setGlobalError('')
 
-    const { error } = await signIn.mfa.verifyEmailCode({ code })
+    const { error } = await signUp.verifications.verifyEmailCode({ code })
     if (error) return
 
-    if (signIn.status === 'complete') {
+    if (signUp.status === 'complete') {
       await finalizeAndRedirect()
     }
   }
 
   async function handleGoogle() {
     setGlobalError('')
-    const { error } = await signIn.sso({
+    const { error } = await signUp.sso({
       strategy: 'oauth_google',
       redirectUrl: redirect,
       redirectCallbackUrl: '/sso-callback',
     })
-    if (error) setGlobalError('Could not start Google sign-in. Try again.')
+    if (error) setGlobalError('Could not start Google sign-up. Try again.')
   }
 
   return (
@@ -106,16 +111,16 @@ function LoginForm() {
                   Declassified Mind
                 </h1>
                 <p className="font-label text-[9px] tracking-[0.2em] text-muted-foreground uppercase">
-                  Member Access Portal
+                  Create Member Account
                 </p>
               </div>
             </div>
 
-            {needsClientTrust ? (
+            {pendingVerification ? (
               <>
                 <p className="font-mono text-xs text-muted-foreground tracking-wide mb-8 leading-relaxed">
                   <span className="text-accent">&gt; </span>
-                  New device detected. Enter the verification code sent to {email}.
+                  Enter the verification code sent to {email}.
                 </p>
 
                 <form onSubmit={handleVerify} className="space-y-4">
@@ -143,12 +148,18 @@ function LoginForm() {
                     )}
                   </div>
 
+                  {globalError && (
+                    <p className="font-label text-[10px] tracking-[0.15em] text-destructive uppercase">
+                      &gt; {globalError}
+                    </p>
+                  )}
+
                   <button
                     type="submit"
                     disabled={loading || !code}
                     className="w-full cyber-chamfer-sm border-2 border-accent text-accent font-label text-xs tracking-[0.2em] uppercase py-3 hover:bg-accent hover:text-background transition-all duration-150 hover:shadow-neon disabled:opacity-40 disabled:cursor-not-allowed cyber-focus"
                   >
-                    {loading ? 'Verifying...' : '> Verify Device'}
+                    {loading ? 'Verifying...' : '> Verify Email'}
                   </button>
                 </form>
               </>
@@ -156,7 +167,7 @@ function LoginForm() {
               <>
                 <p className="font-mono text-xs text-muted-foreground tracking-wide mb-8 leading-relaxed">
                   <span className="text-accent">&gt; </span>
-                  Sign in to retrieve your intelligence files.
+                  Create an account to access your intelligence files.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -176,9 +187,9 @@ function LoginForm() {
                         required
                       />
                     </div>
-                    {errors?.fields?.identifier && (
+                    {errors?.fields?.emailAddress && (
                       <p className="font-label text-[10px] tracking-[0.15em] text-destructive uppercase mt-2">
-                        &gt; {errors.fields.identifier.message}
+                        &gt; {errors.fields.emailAddress.message}
                       </p>
                     )}
                   </div>
@@ -193,9 +204,10 @@ function LoginForm() {
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder="enter password"
+                        placeholder="minimum 15 characters"
                         className="w-full bg-card border border-border cyber-chamfer-sm pl-8 pr-4 py-3 font-mono text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors duration-150"
-                        autoComplete="current-password"
+                        autoComplete="new-password"
+                        minLength={15}
                         required
                       />
                     </div>
@@ -208,16 +220,19 @@ function LoginForm() {
 
                   {(globalError || errors?.global) && (
                     <p className="font-label text-[10px] tracking-[0.15em] text-destructive uppercase">
-                      &gt; {globalError || errors?.global?.[0]?.message || 'ACCESS DENIED'}
+                      &gt; {globalError || errors?.global?.[0]?.message}
                     </p>
                   )}
 
+                  {/* Required by Clerk's bot sign-up protection */}
+                  <div id="clerk-captcha" />
+
                   <button
                     type="submit"
-                    disabled={loading || !email || !password}
+                    disabled={loading || !email || password.length < 15}
                     className="w-full cyber-chamfer-sm border-2 border-accent text-accent font-label text-xs tracking-[0.2em] uppercase py-3 hover:bg-accent hover:text-background transition-all duration-150 hover:shadow-neon disabled:opacity-40 disabled:cursor-not-allowed cyber-focus"
                   >
-                    {loading ? 'Authenticating...' : '> Enter the Archive'}
+                    {loading ? 'Creating Account...' : '> Create Account'}
                   </button>
                 </form>
 
@@ -243,9 +258,9 @@ function LoginForm() {
                 </button>
 
                 <p className="font-label text-[9px] tracking-[0.15em] text-muted-foreground uppercase text-center mt-6">
-                  No account?{' '}
-                  <Link href="/sign-up" className="text-accent hover:text-neon transition-colors">
-                    Sign up
+                  Already have an account?{' '}
+                  <Link href="/login" className="text-accent hover:text-neon transition-colors">
+                    Sign in
                   </Link>
                 </p>
               </>
@@ -262,10 +277,10 @@ function LoginForm() {
   )
 }
 
-export default function LoginPage() {
+export default function SignUpPage() {
   return (
     <Suspense>
-      <LoginForm />
+      <SignUpForm />
     </Suspense>
   )
 }

@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useState } from 'react'
+import { useAuth, useClerk } from '@clerk/nextjs'
 import MineLogo from '@/components/ui/MineLogo'
 
 const links = [
@@ -15,9 +16,10 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname()
+  const router = useRouter()
+  const { isSignedIn } = useAuth()
+  const { signOut } = useClerk()
   const [menuOpen, setMenuOpen] = useState(false)
-
-  const isGated = pathname.startsWith('/documents') || pathname === '/program' || pathname === '/cheat-sheet' || pathname === '/portal'
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
@@ -26,7 +28,7 @@ export default function Nav() {
         <Link href="/" className="flex items-center gap-3 group">
           <MineLogo size={28} />
           <span className="font-heading text-xs font-bold tracking-[0.2em] text-foreground group-hover:text-accent transition-colors duration-150">
-            DECLASSIFIED<span className="text-muted-foreground">//</span>MINE
+            DECLASSIFIED<span className="text-muted-foreground">//</span>MIND
           </span>
         </Link>
 
@@ -49,15 +51,14 @@ export default function Nav() {
 
         {/* Right: CTA/Logout + hamburger */}
         <div className="flex items-center gap-3">
-          {isGated ? (
-            <form action="/api/auth/logout" method="POST">
-              <button
-                type="submit"
-                className="cyber-chamfer-sm bg-transparent border border-muted-foreground/40 text-muted-foreground font-label text-xs tracking-[0.15em] uppercase px-4 py-2 hover:border-destructive hover:text-destructive transition-all duration-150 cyber-focus"
-              >
-                Log Out
-              </button>
-            </form>
+          {isSignedIn ? (
+            <button
+              type="button"
+              onClick={() => signOut(() => router.push('/'))}
+              className="cyber-chamfer-sm bg-transparent border border-muted-foreground/40 text-muted-foreground font-label text-xs tracking-[0.15em] uppercase px-4 py-2 hover:border-destructive hover:text-destructive transition-all duration-150 cyber-focus"
+            >
+              Log Out
+            </button>
           ) : (
             <Link
               href="/#pricing"
