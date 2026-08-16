@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { allDocuments, getDocumentById, getRelatedDocuments, getCategoryColor, COLOR_MAP } from '@/lib/documents'
+import { hasReaderContent } from '@/lib/document-content'
 import CategoryBadge from '@/components/ui/CategoryBadge'
 import DocCard from '@/components/ui/DocCard'
 
@@ -29,6 +30,7 @@ export default async function DocumentPage({ params }: Props) {
   const related = getRelatedDocuments(doc, 3)
   const color = getCategoryColor(doc.category)
   const { text, border, shadow, bg } = COLOR_MAP[color]
+  const hasReader = hasReaderContent(doc.id)
 
   return (
     <div className="pt-14 min-h-screen">
@@ -177,11 +179,24 @@ export default async function DocumentPage({ params }: Props) {
                 Source Document
               </p>
 
+              {hasReader && (
+                <Link
+                  href={`/viewer/${doc.id}`}
+                  className={`block w-full text-center cyber-chamfer-sm border-2 ${border} ${text} font-label text-xs tracking-[0.2em] uppercase px-6 py-3 hover:${bg} transition-all duration-150 hover:${shadow} cyber-focus mb-3`}
+                >
+                  Read Online
+                </Link>
+              )}
+
               <a
                 href={doc.pdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`block w-full text-center cyber-chamfer-sm border-2 ${border} ${text} font-label text-xs tracking-[0.2em] uppercase px-6 py-3 hover:${bg} transition-all duration-150 hover:${shadow} cyber-focus mb-3`}
+                className={`block w-full text-center cyber-chamfer-sm ${
+                  hasReader
+                    ? 'border border-border text-muted-foreground hover:border-accent/50 hover:text-foreground'
+                    : `border-2 ${border} ${text} hover:${bg} hover:${shadow}`
+                } font-label text-xs tracking-[0.2em] uppercase px-6 py-3 transition-all duration-150 cyber-focus mb-3`}
               >
                 Access PDF ↗
               </a>

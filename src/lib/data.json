@@ -50,12 +50,12 @@
     },
     {
       "id": 5,
-      "title": "Meditation Investigation",
+      "title": "Meditating Toward Inner Peace",
       "doc_number": "CIA-RDP79-00999A000200010091-5",
       "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP79-00999A000200010091-5.pdf",
       "category": "Meditation / Consciousness Research",
-      "topics": ["Meditation", "Altered states of consciousness", "Brain research", "Scientific investigation of meditation"],
-      "summary": "Overview of breakthroughs in research concerning altered states of consciousness, the brain, and scientific interest in meditation practices."
+      "topics": ["Transcendental Meditation", "Physiological effects of meditation", "Robert Keith Wallace", "Herbert Benson", "Meditation and drug use", "Science News 1973"],
+      "summary": "Science News magazine feature (Dec. 15, 1973) by Robert J. Trotter surveying early physiological research into Transcendental Meditation — Wallace and Benson's Harvard studies on blood flow, oxygen consumption, and skin resistance during TM, plus its measured effects on drug use, hypertension, and psychotherapy outcomes."
     },
     {
       "id": 6,
@@ -95,12 +95,12 @@
     },
     {
       "id": 10,
-      "title": "Dolan's Training Technique",
+      "title": "Dolin's Training Technique",
       "doc_number": "CIA-RDP96-00792R000500600034-0",
       "pdf_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00792R000500600034-0.pdf",
-      "category": "Breathing / Meditation / Consciousness Training",
-      "topics": ["Three-phase breathing", "Diaphragm breathing", "Progressive relaxation", "Focus 10", "Focus 12", "Remote viewing preparation", "Cooling breath", "Rhythmic breathing"],
-      "summary": "Describes a structured training technique involving three-phase breathing (inhale through nose, hold, exhale through mouth), progressive relaxation meditation, countdown to altered states, and consciousness expansion for remote viewing."
+      "category": "Parapsychology / Remote Influence Research",
+      "topics": ["Remote influence", "Operator training", "Three-phase breathing", "Impulse mode concentration", "Field influence", "Mental influence", "Rapport with receiver"],
+      "summary": "SAIC memorandum detailing Dr. Dolin's training procedure for \"remote influence\" operators — psychically affecting a distant receiver's mental, emotional, or physiological state — covering visualization, breathing, concentration technique, and the distinction between \"mental influence\" and short-range \"field influence.\""
     },
     {
       "id": 11,
